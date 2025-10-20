@@ -9,7 +9,7 @@ dotenv.config();
 const app = express();
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://bookingnest.vercel.app"],
+    origin: ["*"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: false,
   })
